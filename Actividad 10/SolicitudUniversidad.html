@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form action="TablaSolicitud.php" method="post">
+      <fieldset>
+        <legend>Solicitud de Ingreso a la Universidad</legend>
+        <label for="Nombre"> Nombre:
+          <input type="text" name="Nombre" required>
+        </label>
+        <br>
+        <label for="Apellido Paterno">Apellido Paterno:
+          <input type="text" name="ApellidoPatern" required>
+        </label>
+        <br>
+        <label for="Apellido Materno">Apellido Materno:
+          <input type="text" name="ApellidoMatern" required>
+        </label>
+        <br>
+        <label for="Sexo">Sexo:
+          <input type="radio" name="Sexo" value="Hombre">Hombre
+          <input type="radio" name="Sexo" value="Mujer">Mujer
+        </label>
+        <br>
+        <label for="Edad">Edad:
+          <input type="number" name="Edad" min="17" max="35">
+        </label>
+        <br>
+        <label for="Correo">Correo Electronico:
+          <input type="email" name="Correo">
+        </label>
+        <br>
+        <label for="Telefono">Télefono:
+          <input type="number" name="Telefono">
+        </label>
+        <br>
+        <label for="Celular">Celular:
+          <input type="number" name="Celular">
+        </label>
+        <br>
+        <label for="Escuela">Escuela de Procedencia:</label>
+          <select name="EscueladeProcedencia">
+            <optgroup label="Escuela Nacional Preparatoria">
+                <option value="ENP 1">Plantel 1 Gabino Barreda</option>
+                <option value="ENP 2">Plantel 2 Erasmo Castellanos Quinto</option>
+                <option value="ENP 3">Plantel 3 Justo Sierra</option>
+                <option value="ENP 4">Plantel 4 Vidal Castañeda y Nájera</option>
+                <option value="ENP 5">Plantel 5 José Vasconcelos</option>
+                <option value="ENP 6">Plantel 6 Antonio Caso</option>
+                <option value="ENP 7">Plantel 7 Ezequiel A. Chávez</option>
+                <option value="ENP 8">Plantel 8 Miguel E. Schulz</option>
+                <option value="ENP 9">Plantel 9 Pedro de Alba</option>
+            </optgroup>
+            <optgroup label="Colegio de Ciencias y Humanidades">
+                <option value="CCH Azcapotzalco"> CCH Plantel Azcapotzalco</option>
+                <option value="CCH Naucalpan"> CCH Plantel Naucalpan</option>
+                <option value="CCH Oriente"> CCH Plantel Oriente</option>
+                <option value="CCH Sur"> CCH Plantel Sur</option>
+                <option value="CCH Vallejo"> CCH Plantel Vallejo</option>
+            </optgroup>
+          </select>
+        <br>
+        <label for="Promedio">Promedio:
+          <input type="number" name="Promedio" min="5" max="10">
+        </label>
+        <br>
+        <label for="Primera">Primera Opción:
+          <input type="text" name="PrimeraOp" required>
+        </label>
+        <br>
+        <label for="Segunda">Segunda Opción:
+          <input type="text" name="SegundaOp" required>
+        </label>
+        <br>
+        <input type="submit" name="Enviar" value="Enviar">
+        <input type="reset" name="Limpiar" value="Limpiar">
+    </form>
+  </body>
+</html>
