@@ -23,24 +23,24 @@
         </label>
         <br>
         <label for="Sexo">Sexo:
-          <input type="radio" name="Sexo" value="Hombre">Hombre
+          <input type="radio" name="Sexo" value="Hombre" required>Hombre
           <input type="radio" name="Sexo" value="Mujer">Mujer
         </label>
         <br>
         <label for="Edad">Edad:
-          <input type="number" name="Edad" min="17" max="35">
+          <input type="number" name="Edad" min="17" max="35" required>
         </label>
         <br>
         <label for="Correo">Correo Electronico:
-          <input type="email" name="Correo">
+          <input type="email" name="Correo" required>
         </label>
         <br>
         <label for="Telefono">Télefono:
-          <input type="number" name="Telefono">
+          <input type="number" name="Telefono" min="1000000000" required>
         </label>
         <br>
         <label for="Celular">Celular:
-          <input type="number" name="Celular">
+          <input type="number" name="Celular" min="1000000000" required>
         </label>
         <br>
         <label for="Escuela">Escuela de Procedencia:</label>
@@ -66,7 +66,7 @@
           </select>
         <br>
         <label for="Promedio">Promedio:
-          <input type="number" name="Promedio" min="5" max="10">
+          <input type="number" name="Promedio" min="5" max="10" required>
         </label>
         <br>
         <label for="Primera">Primera Opción:
